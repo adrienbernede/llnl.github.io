@@ -12,77 +12,77 @@ R → Recommended
 
 **M.lic.2**  [List of dependencies](/licensing/Mlic2.md)
 
-**R.lic.3**  Existing RADIUSS products should consider transitioning to an OSI-approved, permissive open-source license (e.g., Apache, MIT, or BSD 3-Clause). 
+**R.lic.3**  [Transitioning to an OSI-approved, permissive open-source license](/licensing/Rlic3.md) 
 
-**R.lic.4**  RADIUSS products should provide a list of dependencies and their associated licenses in Software Package Data Exchange (SPDX) format.
+**R.lic.4**  [Dependencies and licenses in SPDX format](/licensing/Rlic4.md)
 
 
 ## Documentation
 
-**M.doc.1** RADIUSS products must publish documentation in a web-based form.
+**M.doc.1** [Documentation in a web-based form](/documentation/Mdoc1.md)
 
-**M.doc.2** RADIUSS product documentation source must be revision-controlled along with source code.
+**M.doc.2** [Versieon-controlled documentation along with source code](/documentation/Mdoc2.md)
 
-**R.doc.3** RADIUSS product documentation should be produced using Sphinx, LaTeX, or Doxygen.
+**R.doc.3** [Document using Sphinx, LaTeX, or Doxygen](/documentation/Rdoc3.md)
 
-**R.doc.4** RADIUSS products should provide code samples along with documentation
+**R.doc.4** [Provide code samples along with documentation](/documentation/Rdoc4.md)
 
-**M.doc.5** Provide a documented, reliable way to contact the development team, even for RADIUSS itself
+**M.doc.5** [Contact information of development team](/documentation/Mdoc5.md)
 
 
 ## Build
 
-**M.bui.1** All RADIUSS products must support automated builds of their dependencies.
+**M.bui.1** [Support automated builds of dependencies.](/build/Mbui1.md)
 
-**M.bui.2** All RADIUSS products must support installation using Spack.
+**M.bui.2** [Support installation using Spack.](/build/Mbui2.md)
 
-**R.bui.3** RADIUSS products coded in C++ and/or FORTRAN should be built using CMake and BLT (Build, Link and Test).
+**R.bui.3** [Build C/C++ and FORTRAN using CMake and BLT](/build/Rbui3.md)
 
 
 ## Version Control
 
-**M.ver.1** All RADIUSS products must be version-controlled and must use Git.
+**M.ver.1** [Version controlled and must use Git](/version-control/Mver1.md)
 
-**M.ver.2** Each RADIUSS product must be maintained at GitHub.
+**M.ver.2** [Be maintained at GitHub](/version-control/Mver2.md)
 
-**R.ver.3** Products should use Pull Requests to facilitate code review and testing of code changes.
+**R.ver.3** [Use Pull Requests](/version-control/Rver3.md)
 
 
 ## Testing and Continuous Integration
 
-**M.tes.1** All products must include regression tests.
+**M.tes.1** [Include regression tests](/test/Mtes1.md)
 
-**M.tes.2** RADIUSS products must provide a comprehensive test suite that can be run by users and does not require the purchase of commercial software.
+**M.tes.2** [Provide a comprehensive test suite requiring no commercial software](/test/Mtes2.md)
 
-**R.tes.3** A significant subset of the test suite should complete within a few hours on standard workstation-level hardware. It is also recommended that at least a significant subset of the tests be can be run in batch-only environments.
+**R.tes.3** [Tests on standard workstation-level hardware](/test/Rtes3.md)
 
-**R.tes.4** The test suite should include an option to perform compilation across a matrix of compilers.
+**R.tes.4** [Test with different compilers](/test/Rtes4.md)
 
-**M.tes.5** All RADIUSS products must use Continuous Integration (CI) so that changes are tested as they are introduced.  Examples of CI tools include Travis CI for projects hosted on GitHub or GitLab CI for projects hosted on a GitLab instance such as LC-GitLab.  Future products may use Azure Pipelines.
+**M.tes.5** [Use Continuous Integration](/test/Mtes5.md)
 
-**R.tes.6** Products should enforce code quality/health with static checkers and/or other tools.
+**R.tes.6** [Enforce code quality/health with tests](/test/Rtes6.md)
 
 
 ## Portability
 
-**M.por.1** RADIUSS products must support common HPC platforms, including standard Linux distributions, and common compiler toolchains such as GNU, Clang, and vendor compilers. 
+**M.por.1** [Support common HPC platforms and toolchains](Mpor1.md)
 
-**R.por.2** Support for Apple Mac OS and Microsoft Windows Visual Studio is recommended.
+**R.por.2** [Support for Apple macOS and Microsoft Windows](Rpor2.md)
 
 
 ## Packaging
 
-**M.pac.1** Each RADIUSS product API must include a way to return the current version number of the software and indicate which configure/CMAKE and compiler options were used to build the package. For development versions of the software, each package must provide the current commit ID in the repository.
+**M.pac.1** [Current version number and build information](Mpac1.md)
 
-**R.pac.2** Each RADIUSS product should use a limited and well-defined symbol, macro, library, and include file name space . For example, there should be no publicly-visible include files such as utils.h, or package named libutil.a or macros named YES or TRUE. Namespacing of include files can be handled either by prepending each include file with a package name, for example <XXXutils.h>, or by placing and referencing all include files in a subdirectory with a package name, for example <XXX/utils.h>. Note that using a -I/XXX/ and referencing it in source via <utils.h> would not be acceptable namespacing due to the inherent fragility of this approach.
+**R.pac.2** [Use a limited and well-defined symbol, macro, library, and include file namespace](Rpac2.md)
 
-**M.pac.3** Each RADIUSS product that utilizes MPI must restrict its MPI operations to MPI communicators that are provided to it and not use directly MPI_COMM_WORLD. Products must use configure tests or version tests to detect MPI 2 or MPI 3 features that may not be available; it should not be assumed that a full MPI 2 or MPI 3 implementation is available. Products can change the MPI error-handling mode by default but should have an option to prevent them from changing the MPI error handling (which may have been set by another package or the application). The product should also behave appropriately regardless of the MPI error handling being used. There is no requirement that the product provide a sequential (non-MPI) version, but if one is provided, there is no requirement that it be compatible or usable with other RADIUSS products running without MPI.
+**M.pac.3** [MPI restrictions](Mpac3.md)
 
 
 ## Logging and Debugging
 
-**R.log.1**  RADIUSS products should use SLIC for logging.
+**R.log.1** [Use SLIC for logging](Rlog1.md)
 
-**R.log.2**  RADIUSS products should make debug support switchable at compile time.
+**R.log.2** [Debug symbols](Rlog2.md)
 
 

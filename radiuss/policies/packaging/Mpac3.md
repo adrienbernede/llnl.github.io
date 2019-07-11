@@ -1,4 +1,4 @@
 
 **M.pac.3** Each RADIUSS product that utilizes MPI must restrict its MPI operations to MPI communicators that are provided to it and not use directly MPI_COMM_WORLD. Products must use configure tests or version tests to detect MPI 2 or MPI 3 features that may not be available; it should not be assumed that a full MPI 2 or MPI 3 implementation is available. Products can change the MPI error-handling mode by default but should have an option to prevent them from changing the MPI error handling (which may have been set by another package or the application). The product should also behave appropriately regardless of the MPI error handling being used. There is no requirement that the product provide a sequential (non-MPI) version, but if one is provided, there is no requirement that it be compatible or usable with other RADIUSS products running without MPI.
 
-> Rationale:  See xSDK M3.
+> Ref: xSDK M3.

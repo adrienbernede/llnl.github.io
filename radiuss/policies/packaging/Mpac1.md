@@ -3,4 +3,4 @@
 
 > Rationale: This allows users to make an inventory of what they have, which can aid debugging and configuration management. 
 
-Ref: See Smart Libraries Practice 10 / xSDK M8.
+Ref: Smart Libraries Practice 10 / xSDK M8

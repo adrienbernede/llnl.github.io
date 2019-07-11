@@ -3,4 +3,4 @@
 
 > Rationale: This allows users to unambiguously identify the components within their installed configuration. 
 
-Ref: See Smart Libraries Practice 18. / Less restrictive than xSDK M9
+Ref: Smart Libraries Practice 18 / Less restrictive than xSDK M9

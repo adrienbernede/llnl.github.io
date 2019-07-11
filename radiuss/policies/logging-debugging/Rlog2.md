@@ -1,7 +1,7 @@
 
-**R.log.2**  RADIUSS products should make debug support switchable at compile time.
+**R.log.2**  RADIUSS products should provide at least two quality of service options (debug and production).
 
-> Rationale:  Users don't always need (or want) debug information, and providing debug support may degrade performance.
+> Rationale: Production version should not be compiled with debug symbols, a mechanism to enable/disable those at compile time should be provided.
 
 Ref: Smart Libraries practice 19
 

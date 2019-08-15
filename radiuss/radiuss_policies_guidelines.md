@@ -1,5 +1,5 @@
 
-# RADIUSS Guidelines and Policies
+# RADIUSS Policies and Guidelines
 
 <!--
 Prepared by LLNL under Contract DE-AC52-07NA27344.
@@ -18,79 +18,73 @@ R → Recommended
 
 ## Licensing
 
-**M.lic.1**  [Use OSI-approved permissive open-source license for new projects](/radiuss/policies_guidelines/licensing/Mlic1.md)
+**M.lic.1**  [Use OSI-approved permissive open-source license for new projects](/radiuss/policies_guidelines/licensing.md)
 
-**M.lic.2**  [Provide a List of dependencies and their license](/radiuss/policies_guidelines/licensing/Mlic2.md)
+**M.lic.2**  [Provide a list of dependencies and their license](/radiuss/policies_guidelines/licensing.md)
 
-**R.lic.3**  [Consider moving to an OSI-approved, permissive open-source license](/radiuss/policies_guidelines/licensing/Rlic3.md)
+**R.lic.3**  [Consider moving to an OSI-approved, permissive open-source license](/radiuss/policies_guidelines/licensing.md)
 
-**R.lic.4**  [Format dependencies and their licenses with SPDX](/radiuss/policies_guidelines/licensing/Rlic4.md)
+**R.lic.4**  [Format dependencies and their licenses with SPDX](/radiuss/policies_guidelines/licensing.md)
 
 
 ## Documentation
 
-**M.doc.1** [Provide documentation in a web-based form](/radiuss/policies_guidelines/documentation/Mdoc1.md)
+**M.doc.1** [Publish documentation in a web-based form](/radiuss/policies_guidelines/documentation.md)
 
-**M.doc.2** [Version-control documentation along with source code](/radiuss/policies_guidelines/documentation/Mdoc2.md)
+**M.doc.2** [Version-control documentation coherently with source code](/radiuss/policies_guidelines/documentation.md)
 
-**R.doc.3** [Document using Sphinx, LaTeX, or Doxygen](/radiuss/policies_guidelines/documentation/Rdoc3.md)
+**M.doc.3** [Provide contact information of development team](/radiuss/policies_guidelines/documentation.md)
 
-**R.doc.4** [Provide code samples along with documentation](/radiuss/policies_guidelines/documentation/Rdoc4.md)
+**R.doc.4** [Document using a human readable format that can be converted to pdf and html](/radiuss/policies_guidelines/documentation.md)
 
-**M.doc.5** [Provide contact information of development team](/radiuss/policies_guidelines/documentation/Mdoc5.md)
+**R.doc.5** [Provide code samples along with documentation](/radiuss/policies_guidelines/documentation.md)
 
 
 ## Build
 
-**M.bui.1** [Support automated builds of dependencies](/radiuss/policies_guidelines/build/Mbui1.md)
+**M.bui.1** [Package installation and provide automated builds of dependencies (Spack)](/radiuss/policies_guidelines/build.md)
 
-**M.bui.2** [Support installation using Spack](/radiuss/policies_guidelines/build/Mbui2.md)
-
-**R.bui.3** [Build C/C++ and FORTRAN using CMake and BLT](/radiuss/policies_guidelines/build/Rbui3.md)
+**R.bui.2** [Have C/C++ and FORTRAN projects buildable with CMake](/radiuss/policies_guidelines/build.md)
 
 
 ## Version Control
 
-**M.ver.1** [Be version controlled using Git](/radiuss/policies_guidelines/version-control/Mver1.md)
+**M.ver.1** [The source code has to be version controlled (Git)](/radiuss/policies_guidelines/version-control.md)
 
-**M.ver.2** [Be maintained at GitHub](/radiuss/policies_guidelines/version-control/Mver2.md)
-
-**R.ver.3** [Use Pull Requests](/radiuss/policies_guidelines/version-control/Rver3.md)
+**M.ver.2** [Accept online contribution based on pull requests, and collect issues (GitHub)](/radiuss/policies_guidelines/version-control.md)
 
 
 ## Testing and Continuous Integration
 
-**M.tes.1** [Include regression tests](/radiuss/policies_guidelines/test/Mtes1.md)
+**M.tes.1** [Use regression tests in the development process](/radiuss/policies_guidelines/tests-ci.md)
 
-**M.tes.2** [Provide a comprehensive test suite requiring no commercial software](/radiuss/policies_guidelines/test/Mtes2.md)
+**M.tes.2** [Provide a comprehensive test suite for correctness of installation verification](/radiuss/policies_guidelines/tests-ci.md)
 
-**R.tes.3** [Tests on standard workstation-level hardware](/radiuss/policies_guidelines/test/Rtes3.md)
+**M.tes.3** [Take advantage of Continuous Integration](/radiuss/policies_guidelines/tests-ci.md)
 
-**R.tes.4** [Test with different compilers](/radiuss/policies_guidelines/test/Rtes4.md)
+**R.tes.4** [Verify continuously the compatibility with different compilers](/radiuss/policies_guidelines/tests-ci.md)
 
-**M.tes.5** [Use Continuous Integration](/radiuss/policies_guidelines/test/Mtes5.md)
-
-**R.tes.6** [Enforce code quality/health with tests](/radiuss/policies_guidelines/test/Rtes6.md)
+**R.tes.5** [Ensure code quality/health in an automated manner](/radiuss/policies_guidelines/tests-ci.md)
 
 
 ## Portability
 
-**M.por.1** [Support common HPC platforms and toolchains](/radiuss/policies_guidelines/portability/Mpor1.md)
+**M.por.1** [Support common HPC platforms and toolchains](/radiuss/policies_guidelines/portability.md)
 
-**R.por.2** [Support for Apple macOS and Microsoft Windows](/radiuss/policies_guidelines/portability/Rpor2.md)
+**R.por.2** [Support Apple macOS and Microsoft Windows](/radiuss/policies_guidelines/portability.md)
 
 
 ## Packaging
 
-**M.pac.1** [Provide current version number and build information](/radiuss/policies_guidelines/packaging/Mpac1.md)
+**M.pac.1** [Provide current version number and build information](/radiuss/policies_guidelines/packaging.md)
 
-**R.pac.2** [Use a limited and well-defined symbol, macro, library, and include file namespace](/radiuss/policies_guidelines/packaging/Rpac2.md)
+**R.pac.2** [Use a limited and well-defined symbol, macro, library, and include file namespace](/radiuss/policies_guidelines/packaging.md)
 
-**M.pac.3** [MPI restrictions](/radiuss/policies_guidelines/packaging/Mpac3.md)
+**M.pac.3** [Repect MPI compatibility best practices](/radiuss/policies_guidelines/packaging.md)
 
 
 ## Logging and Debugging
 
-**R.log.1** [Use SLIC for logging](/radiuss/policies_guidelines/logging-debugging/Rlog1.md)
+**R.log.1** [Use consistent, formatted logs](/radiuss/policies_guidelines/logging-debugging.md)
 
-**R.log.2** [Provide production and debugging versions](/radiuss/policies_guidelines/logging-debugging/Rlog2.md)
+**R.log.2** [Provide production and debugging builds](/radiuss/policies_guidelines/logging-debugging.md)
